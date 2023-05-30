@@ -43,6 +43,16 @@ const BriefContent = styled.div`
   margin-top: -15%;
   margin-left: 40%;
   text-align: left;
+
+  @media screen and (max-width: 640px) {
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-top: 5%;
+    margin-left: 10%;
+  }
 `
 
 const BriefWhite = styled.h1`
@@ -55,11 +65,12 @@ const BriefOrange = styled.h1`
 
 const MainPage = (props) => {
   const [lang, setLang] = useState('ko-KR');
+  const [current, setCurrent] = useState('home');
 
   return (
     <>
       <HeaderDiv>
-        <Header />
+        <Header cur = {current} />
       </HeaderDiv>
       <BodyContent>
         <SquareImg src={main_square} alt='Main Logo' />

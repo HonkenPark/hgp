@@ -2,7 +2,7 @@ import { HomeOutlined, UserOutlined, ProfileOutlined, MailOutlined, GlobalOutlin
 import { Breadcrumb, ConfigProvider } from 'antd';
 import DropdownLanguage from './DropdownLanguage';
 
-const Header = () => {
+const Header = (current) => {
 
   return (
     <ConfigProvider
@@ -19,7 +19,7 @@ const Header = () => {
           title: (
             <>
               <HomeOutlined />
-              <span>Home</span>
+              {current === 'home' ? <span><b>Home</b></span> : <span>Home</span> }
             </>
           )
         },

@@ -4,11 +4,11 @@ export const textLabel = {
   'PrimaryBlack' : '#2C3034',
   'Main' : {
     'introduce_top' : [
-      '와주셔서 감사합니다.',
-      'Goooood to see you, I AM'
+      '반갑습니다. 저는',
+      'Good to see you, I am'
     ],
     'introduce_mid' : [
-      '다양한 경험과 넓은 시야를 가진 파트너,',
+      '당신의 조직에 보탬이 될 개발자,',
       'Honken Park'
     ],
     'introduce_bot' : [
@@ -25,7 +25,16 @@ export const textLabel = {
       'detail_introduce' : [
         '한글',
         '영문'
-      ]
+      ],
     }
-  ]
+  ],
+
+  'Project' : [
+    {
+      'introduce' : [
+        '한글',
+        '영문'
+      ],
+    }
+  ],
 }; 
