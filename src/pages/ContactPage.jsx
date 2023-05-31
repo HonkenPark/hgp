@@ -1,7 +1,12 @@
+import Header from 'components/Header';
+import { textLabel } from 'common/textLabel';
+
 const ContactPage = () => {
+  document.body.style.backgroundColor = textLabel.PrimaryIndigo;
+
   return (
     <>
-      <div>ContactPage</div>
+      <Header cur = {'contact'} />
     </>
   )
 }

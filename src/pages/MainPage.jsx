@@ -5,31 +5,6 @@ import { textLabel } from 'common/textLabel';
 
 import Header from 'components/Header';
 
-const HeaderDiv = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* padding: 40px 270px; */
-  gap: 10px;
-
-  position: absolute;
-  width: 100%;
-  left: 0px;
-  top: 0px;
-  height: 4vw;
-
-  @media screen and (max-width: 640px) {
-    height: 8vw;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: 12vw;
-  }
-
-  background: #F7F7F7;
-`
-
 const BodyContent = styled.div`
   display: block;
 `
@@ -64,14 +39,13 @@ const BriefOrange = styled.h1`
 `
 
 const MainPage = (props) => {
+  document.body.style.backgroundColor = textLabel.PrimaryBlack;
+  
   const [lang, setLang] = useState('ko-KR');
-  const [current, setCurrent] = useState('home');
 
   return (
     <>
-      <HeaderDiv>
-        <Header cur = {current} />
-      </HeaderDiv>
+      <Header cur = {'home'} />
       <BodyContent>
         <SquareImg src={main_square} alt='Main Logo' />
         {lang !== 'ko-KR' ?
