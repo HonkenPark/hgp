@@ -19,7 +19,7 @@ const BriefContent = styled.div`
   margin-left: 40%;
   text-align: left;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 800px) {
     margin-top: 5%;
     margin-left: 10%;
   }
@@ -48,7 +48,7 @@ const MainPage = (props) => {
       <Header cur = {'home'} />
       <BodyContent>
         <SquareImg src={main_square} alt='Main Logo' />
-        {lang !== 'ko-KR' ?
+        {lang === 'ko-KR' ?
         <BriefContent>
           <BriefWhite>{textLabel.Main.introduce_top[0]}</BriefWhite>
           <BriefWhite>{textLabel.Main.introduce_mid[0]}</BriefWhite>

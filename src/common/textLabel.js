@@ -2,21 +2,21 @@ export const textLabel = {
   'PrimaryOrange' : '#FF4500',
   'PrimaryGray' : '#F7F7F7',
   'PrimaryBlack' : '#2C3034',
-  'PrimaryPurple' : '#4B1A8A',
+  'PrimaryPurple' : '#70577c',
   'PrimaryBlue' : '#2D4066',
   'PrimaryIndigo' : '#060D27',
   'Main' : {
     'introduce_top' : [
-      '반갑습니다. 저는',
-      'Good to see you, I am'
+      '안녕하세요 😄',
+      'Welcome to'
     ],
     'introduce_mid' : [
-      '당신의 조직에 보탬이 될 개발자,',
-      'Honken Park'
+      '♠️보다 🃏를 지향하는 개발자',
+      'Honken\'s portfolio 😄'
     ],
     'introduce_bot' : [
-      '박홍근 입니다.',
-      'who can perform all given tasks with wide experience.'
+      '박홍근의 포트폴리오 입니다.',
+      'I can complete all given tasks with my wide experience.'
     ]},
 
   'About' : {
